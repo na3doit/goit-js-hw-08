@@ -6,11 +6,9 @@ const email = document.querySelector('input');
 const message = document.querySelector('textarea');
 
 let formData = {};
-
+listenTextarea();
 formEl.addEventListener('submit', onSubmitForm);
 formEl.addEventListener('input', throttle(onFormData, 500));
-
-listenTextarea();
 
 function onSubmitForm(event) {
   event.preventDefault();
